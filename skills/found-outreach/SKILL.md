@@ -1,7 +1,7 @@
 ---
 name: found-outreach
 description: Use when the user wants to work with FOUND, their AI SDR for LinkedIn and email - warm leads from buying signals, pipeline or campaign numbers, researching an account, finding new companies or the right contact, drafting a message, or setting up a campaign.
-version: 1.0.0
+version: 1.0.1
 author: FOUND
 license: MIT
 ---
@@ -58,6 +58,20 @@ credits and Asks left today. Use the ids it returns; never invent one.
 | "Tell me about Acme" | `research_account` |
 | "Show me campaign X's setup" | `get_campaign` |
 | "Is my search done?" | `get_new_leads` |
+
+### Finding the warmest leads
+
+`find_leads` returns the warmest first (most flames, then highest intent), so
+the first page already holds the answer to "who's warmest?". Ask for a small
+page: `per_page: 10` is enough to answer, and 50 rows is a large result.
+
+Its filters are `found_within_days` (for "this week", use 7), `min_flames`
+(1 to 3), `status`, `campaign`, `signal_id`, `query` (name, title or company),
+`industry`, `company_size`, `location`, `list` and `audience`, plus `page` and
+`per_page`. There is no sort or period argument: do not invent one.
+
+Each lead carries why FOUND found them (the post, comment or event and when).
+Give that reason with the name; it is what makes a lead worth a message.
 
 ## Write (FOUND stays in control)
 

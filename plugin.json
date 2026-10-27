@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "found",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FOUND, the AI SDR for LinkedIn and email, from Hermes: warm leads found from buying signals, pipeline and campaign numbers, account research, new companies and contacts, drafted messages, and paused campaigns you switch on in FOUND.",
   "author": {
     "name": "FOUND",
