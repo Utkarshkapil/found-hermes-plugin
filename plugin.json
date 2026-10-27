@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "found",
+  "version": "1.0.0",
+  "description": "FOUND, the AI SDR for LinkedIn and email, from Hermes: warm leads found from buying signals, pipeline and campaign numbers, account research, new companies and contacts, drafted messages, and paused campaigns you switch on in FOUND.",
+  "author": {
+    "name": "FOUND",
+    "url": "https://foundtofind.com"
+  },
+  "homepage": "https://foundtofind.com/mcp",
+  "repository": "https://github.com/Utkarshkapil/found-hermes-plugin",
+  "license": "MIT",
+  "keywords": ["linkedin", "outreach", "sales", "sdr", "leads", "buying-signals", "email", "mcp"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "found": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
+}
